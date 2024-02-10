@@ -9,6 +9,7 @@ ORDER BY count DESC
 ;
 
 
+
 -- 2. Вывести 10 актеров, чьи фильмы большего всего арендовали, отсортировать по убыванию.
 
 SELECT actor.first_name, actor.last_name, COUNT(rental.rental_id) AS rentals_count
@@ -21,6 +22,7 @@ GROUP BY actor.actor_id
 ORDER BY rentals_count DESC
 LIMIT 10
 ;
+
 
 
 -- 3. Вывести категорию фильмов, на которую потратили больше всего денег.
